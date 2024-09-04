@@ -1,0 +1,29 @@
+# name: Workflow deployment main
+
+# on:
+#     push:
+#         branches: [main]
+
+# jobs:
+#     access_server:
+#         name: Deployment develop
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: Run deployment
+#               uses: appleboy/ssh-action@master
+#               with:
+#                   host: ${{ secrets.SSH_IP }}
+#                   port: ${{ secrets.SSH_PORT }}
+#                   username: ${{ secrets.SSH_USER }}
+#                   password: ${{ secrets.SSH_PASSWORD }}
+#                   script: |
+#                       cd domains/dondedieubolenge.com/public_html/startert-api-laravel-10
+#                       git pull origin develop
+#                       rm -rf .env
+#                       cp .env.dev .env
+#                       composer2 install --ignore-platform-req=ext-sodium
+#                       php artisan migrate
+#                       php artisan optimize
+#                       php artisan storage:link
+#                       php artisan jwt:secret
+#                       echo 'Deploy develop finished'

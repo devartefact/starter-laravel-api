@@ -1,0 +1,9 @@
+.yarn
+.next
+.nuxt
+dist
+node_modules
+vendor
+public/assets/docs/swagger
+public/assets/admin
+public/build

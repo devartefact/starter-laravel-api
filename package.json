@@ -1,13 +1,39 @@
 {
-    "private": true,
+    "name": "starter-laravel-app",
     "type": "module",
+    "version": "1.0.0",
+    "description": "Starter Laravel App",
+    "author": "Dev Artefact <devartefact23@gmail.com>",
+    "license": "ISC",
+    "private": true,
+    "homepage": "https://github.com/devartefact/starter-laravel-app",
+    "engines": {
+        "node": ">=20.0.0",
+        "yarn": "please-use-npm",
+        "npm": ">=10.5.0"
+    },
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "lint": "eslint resources/js",
+        "build": "vite build",
+        "prepare": "husky",
+        "format": "prettier --write .",
+        "check-format": "prettier --check .",
+        "check-coverage": "node phpunit-check-coverage.js",
+        "generate-coverage-html": "export XDEBUG_MODE=coverage && ./vendor/bin/phpunit --coverage-html=reports/coverage/html"
     },
     "devDependencies": {
+        "@babel/core": "^7.22.11",
+        "@babel/eslint-parser": "^7.22.11",
+        "@commitlint/cli": "^17.7.1",
+        "@commitlint/config-conventional": "^17.7.0",
+        "@eslint/js": "^9.9.1",
         "axios": "^1.6.4",
+        "eslint": "^9.9.1",
+        "globals": "^15.9.0",
+        "husky": "^9.1.5",
         "laravel-vite-plugin": "^1.0",
+        "prettier": "^3.0.2",
         "vite": "^5.0"
     }
 }

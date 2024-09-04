@@ -1,15 +1,22 @@
 {
-    "name": "laravel/laravel",
+    "name": "devartefact/starter-laravel-app",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
-    "license": "MIT",
+    "description": "Starter Laravel App",
+    "keywords": [
+        "framework",
+        "laravel",
+        "starter",
+        "app"
+    ],
+    "license": "ISC",
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "zircote/swagger-php": "^4.10"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^3.1",
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
