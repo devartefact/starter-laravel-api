@@ -42,7 +42,9 @@
     <div class="container d-flex justify-content-center align-items-center min-vh-80">
         <div class="p-3 mb-4 bg-info-subtle text-center rounded-lg">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold mb-3">{{ __('messages.welcome') }}</h1>
+                <h1 class="display-5 fw-bold mb-3">
+                    {{ __('messages.welcome') }} {{ __('to') }} <strong>{{ config('app.name') }}</strong>
+                </h1>
                 <p class="col-md-8 mx-auto mb-4">
                     {{ __('This is a starter for anyone looking to build a web application with Laravel, MySQL, and other Database Management Systems.') }}
                 </p>
