@@ -1,4 +1,4 @@
-# Starter Laravel App
+# Starter Laravel API
 
 ## About
 
@@ -8,12 +8,12 @@ This is a Starter, developed with Laravel framework and MySQL.
 
 After cloning the project, you must use the package manager <a href="https://getcomposer.org/" target="_blank">Composer</a> to install all dependencies.
 
-We use <a href="https://nodejs.org/" target="_blank">Node.js</a> and <a href="https://docs.npmjs.com/about-npm">npm</a> as the package manager for frontend libraries and some automated actions.
+We use <a href="https://nodejs.org/" target="_blank">Node.js</a> and <a href="https://docs.npmjs.com/about-npm">npm</a> as the package manager for some automated actions.
 
 -   Cloning project
 
 ```sh
-git clone https://github.com/devartefact/starter-laravel-app.git
+git clone https://github.com/devartefact/starter-laravel-api.git
 ```
 
 -   Installation dependencies

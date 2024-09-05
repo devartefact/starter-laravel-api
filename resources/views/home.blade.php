@@ -46,7 +46,7 @@
                     {{ __('messages.welcome') }} {{ __('to') }} <strong>{{ config('app.name') }}</strong>
                 </h1>
                 <p class="col-md-8 mx-auto mb-4">
-                    {{ __('This is a starter for anyone looking to build a web application with Laravel, MySQL, and other Database Management Systems.') }}
+                    {{ __('This is a starter for anyone looking to build an API with Laravel, MySQL, or other Database Management Systems.') }}
                 </p>
                 <a href="#" class="btn btn-primary btn-lg" type="button">
                     {{ __('Documentation') }}
